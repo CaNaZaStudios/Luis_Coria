@@ -18,12 +18,10 @@
 
 .nav-link {
     color: rgb(255, 255, 255) !important;
-    /* transition: transform 0.2s ease !important; */
 }
 
 .nav-link:hover {
     color: #4f87ff !important;
-    /* transform: scale(1.1) !important; */
 }
 
 .navbar-toggler-icon {
@@ -31,7 +29,21 @@
 }
 
 .nav-item {
-    font-size: 17px;
+    font-size: 18px;
+}
+
+/* APARTADO MAIN */
+
+.general-main {
+    margin-top: 100px;
+}
+
+/* ALTERNATIVA EN DISPOSITIVOS PEQUEÑOS */
+
+@media (max-width: 576px) {
+    .general-main {
+        margin-top: 85px;
+    }
 }
 
 /* APARTADO "HOME" */
