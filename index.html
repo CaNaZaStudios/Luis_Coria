@@ -21,11 +21,11 @@
                 <!-- LINKS DEL NAVBAR -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#section1">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section2">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section3">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section4">Service</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section5">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section1"><i class="bi bi-house icono-navbar"></i>Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section2"><i class="bi bi-person icono-navbar"></i>About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section3"><i class="bi bi-journal icono-navbar"></i>Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section4"><i class="bi bi-briefcase icono-navbar"></i>Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section5"><i class="bi bi-envelope icono-navbar"></i>Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,8 +46,8 @@
             <!-- HABILIDADES -->
             <div class="container mt-5">
                 <div class="section">
-                    <h2 class="text-center">Habilidades</h2>
-                    <div class="row">
+                    <h2 class="ps-1 text-center">Habilidades</h2>
+                    <div class="mt-5 row">
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
@@ -81,6 +81,25 @@
                     </div>
                 </div>
             </div>
+
+            <!-- APARTADO FORMULARIO -->
+            <h2 class="mt-5 p-1 title-form">Contacto</h2>
+
+            <form action="php/send_mail.php" method="POST" id="contactForm" class="container mt-5">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </main>
 
         <!-- FOOTER -->
