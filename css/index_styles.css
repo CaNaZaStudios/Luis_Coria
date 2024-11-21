@@ -28,6 +28,11 @@
     margin-right: 3px;
 }
 
+.flags img {
+    width: 28px; /* Ajusta el tamaño deseado */
+    height: auto;
+}
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'><path stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
 }
@@ -58,6 +63,7 @@
     max-width: 900px;
     margin: auto;
 }
+
 .profile-img {
     border-radius: 50%;
     width: 200px;
@@ -98,6 +104,22 @@
 
 /* APARTADO FORMULARIO */
 
+.title-form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #3e638d, #124987);
+    border-top: 5px solid #4878b0;
+    border-bottom: 5px solid #4878b0;
+    height: 80px;
+    width: 100%;
+}
+
 .title-form {
-    text-align: center;
+    color: #ffffff;
+    margin: 50px;
+}
+
+.button-contac {
+    color: #000000 !important;
 }

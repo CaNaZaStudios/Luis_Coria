@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Mentorias" content="Mentorias para hacer crecer tus ideas.">
-    <link rel="stylesheet" href="css/index_styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Luis Coria</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Mentorias" content="Mentorias para hacer crecer tus ideas.">
+        <link rel="stylesheet" href="css/index_styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://css.gg/flags.css" rel="stylesheet">
+        <title>Luis Coria</title>
+    </head>
     <body>
         <!-- BARRA DE NAVEGACION -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -21,16 +22,17 @@
                 <!-- LINKS DEL NAVBAR -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#section1"><i class="bi bi-house icono-navbar"></i>Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section2"><i class="bi bi-person icono-navbar"></i>About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section3"><i class="bi bi-journal icono-navbar"></i>Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section4"><i class="bi bi-briefcase icono-navbar"></i>Service</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section5"><i class="bi bi-envelope icono-navbar"></i>Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section1"><i class="bi bi-house icono-navbar"></i>Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section2"><i class="bi bi-person icono-navbar"></i>Sobre mi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section3"><i class="bi bi-journal icono-navbar"></i>Portafolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section4"><i class="bi bi-briefcase icono-navbar"></i>Servicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section5"><i class="bi bi-envelope icono-navbar"></i>Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link flags" href="#section5"><img src="img/flags/us.png" alt="USA"></i> English</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
+        
         <main class="general-main">
             <!-- APARTADO HOME -->
             <div class="container mt-5">
@@ -41,6 +43,12 @@
                         <p class="mb-0 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minima aspernatur provident asperiores temporibus autem accusamus explicabo voluptatum eveniet at inventore non ipsam quae, ducimus sint, distinctio obcaecati. Iusto, voluptates?</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- APARTADO SOBRE MI -->
+
+            <div class="title-form-div mt-5">
+                <h2 class="mt-5 p-1 title-form">Sobre mi</h2>
             </div>
 
             <!-- HABILIDADES -->
@@ -83,23 +91,62 @@
             </div>
 
             <!-- APARTADO FORMULARIO -->
-            <h2 class="mt-5 p-1 title-form">Contacto</h2>
+            <div class="title-form-div mt-5">
+                <h2 class="mt-5 p-1 title-form">Contacto</h2>
+            </div>
 
-            <form action="php/send_mail.php" method="POST" id="contactForm" class="container mt-5">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+            <div class="container mt-5">
+                <!-- NAVEGACION DE PESTAÑAS -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="email-tab" data-bs-toggle="tab" data-bs-target="#email" type="button" role="tab" aria-controls="email" aria-selected="true">
+                            <p class="button-contac">Enviar por Email</p>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="whatsapp-tab" data-bs-toggle="tab" data-bs-target="#whatsapp" type="button" role="tab" aria-controls="whatsapp" aria-selected="false">
+                            <p class="button-contac">Enviar por WhatsApp</p>
+                        </button>
+                    </li>
+                </ul>
+                <!-- CONTENIDO DE LAS PESTAÑAS -->
+                <!-- GMAIL -->
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="email" role="tabpanel" aria-labelledby="email-tab">
+                        <form action="#" method="POST" class="mt-3">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Email</button>
+                        </form>
+                    </div>
+                    <!-- WhatsApp -->
+                    <div class="tab-pane fade" id="whatsapp" role="tabpanel" aria-labelledby="whatsapp-tab">
+                        <form action="#" method="POST" class="mt-3">
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Número de Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-wa" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message-wa" name="message-wa" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Enviar WhatsApp</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+            </div>
+
+            <span class="flag-icon flag-icon-us" style="width: 32px; height: 24px;"></span>
         </main>
 
         <!-- FOOTER -->
@@ -147,5 +194,6 @@
         </footer>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="js/index_funtions.js"></script>
     </body>
 </html>
