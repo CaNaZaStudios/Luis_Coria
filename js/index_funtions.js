@@ -2,7 +2,7 @@
 
 // FUNCION PARA USAR WHATSAPP
 function sendWhatsAppMessage() {
-    const phoneNumber = "541123662546";
+    const phoneNumber = "#";
 
     const message = "Hola, estoy interesado en tus servicios. ¿Podríamos hablar?";
 
