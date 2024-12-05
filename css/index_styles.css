@@ -1,27 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-html {
     scroll-behavior: smooth;
-}
-
-.scroll-section {
-    scroll-margin-top: 60px;
+    scroll-padding-top: 64px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
 
 /* APARTADO NAVBAR */
 
-.logo-text {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 27px;
-}
-
 .navbar {
-    background: linear-gradient(to bottom, #0A2647, #114179) !important;
-    border-bottom: 5px solid #4765c7 !important;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 5px solid #444444 !important;
 }
 
 .nav-link {
@@ -32,12 +21,8 @@ html {
     color: #4f87ff !important;
 }
 
-.icono-navbar {
-    margin-right: 3px;
-}
-
 .flags img {
-    width: 28px; /* Ajusta el tamaño deseado */
+    width: 28px;
     height: auto;
 }
 
@@ -49,21 +34,15 @@ html {
     font-size: 18px;
 }
 
-/* APARTADO MAIN */
-
-.general-main {
-    margin-top: 100px;
-}
-
-/* ALTERNATIVA EN DISPOSITIVOS PEQUEÑOS */
-
-@media (max-width: 576px) {
-    .general-main {
-        margin-top: 85px;
-    }
-}
-
 /* APARTADO "HOME" */
+
+#home-section {
+    background-image: url("../img/funds/home-fund.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
 
 .profile-container {
     display: flex;
@@ -74,18 +53,26 @@ html {
 
 .profile-img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin-right: 20px;
 
     border-radius: 50%;
-    border: 5px solid #7497ff;
+    border: 5px solid #ffffff;
     transition: border-color 0.3s ease, color 0.4s ease !important;
 }
 
-.profile-img:hover {
-    border: 5px solid #ffd374;
-    transform: color #a9bfff;
+.content-home h1 {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    margin-left: 20px;
+}
+
+.content-home p {
+    color: #ffffff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    margin-left: 20px;
 }
 
 /* ALTERNATIVA EN DISPOSITIVOS PEQUEÑOS */
@@ -94,14 +81,17 @@ html {
     .profile-container {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 35px;
     }
 
     .profile-img {
         margin-right: 0;
         margin-bottom: 10px;
+        width: 200px;
+        height: 200px;
     }
 
-    .profile-container div h2 {
+    .profile-container div h1 {
         text-align: center;
     }
 
@@ -130,4 +120,29 @@ html {
 
 .button-contac {
     color: #000000 !important;
+}
+
+#WSP {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#WSP a {
+    color: white;
+    font-size: 30px;
+}
+
+#WSP a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
 }

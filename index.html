@@ -7,22 +7,17 @@
         <link rel="stylesheet" href="css/index_styles.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link href="https://css.gg/flags.css" rel="stylesheet">
         <title>Luis Coria</title>
     </head>
     <body>
         <!-- BARRA DE NAVEGACIÓN -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container d-flex align-items-center justify-content-between">
-                <!-- TÍTULO DEL NAVBAR -->
-                <h1 class="navbar-brand mb-0">
-                    <a href="/" class="logo-text">Luis Coria</a>
-                </h1>
-
+                
                 <!-- CONTENEDOR FLEXIBLE -->
-                <div class="d-flex align-items-center flex-grow-1 justify-content-center">
+                <div class="d-flex align-items-center flex-grow-1">
                     <!-- BOTÓN DE IDIOMA (MENÚ DESPLEGABLE) -->
-                    <div class="dropdown mx-3">
+                    <div class="dropdown">
                         <button class="btn btn-outline-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="img/flags/es.png" alt="España" style="width: 20px; height: 14px; margin-right: 8px;"> Español
                         </button>
@@ -45,7 +40,7 @@
                 <!-- LINKS DEL NAVBAR -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto" aria-labelledby="dropdownMenuButton">
-                        <li class="nav-item"><a class="nav-link" href="#home-section"><i class="bi bi-house icono-navbar"></i> Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-house icono-navbar"></i> Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about-me-section"><i class="bi bi-person icono-navbar"></i> Sobre mi</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio-section"><i class="bi bi-journal icono-navbar"></i> Porfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#service-section"><i class="bi bi-briefcase icono-navbar"></i> Servicio</a></li>
@@ -54,179 +49,190 @@
                 </div>
             </div>
         </nav>
-
         
         <main class="general-main">
-            <!-- APARTADO HOME -->
-            <section class="container mt-5">
-                <div class="profile-container">
+            <!-- BOTON WHATSAPP -->
+            <aside id="WSP">
+                <a href="#" onclick="sendWhatsAppMessage()" id="whatsappLink">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </aside>
+
+            <!-- SECCION HOME -->
+            <section class="container-fluid d-flex align-items-center justify-content-center vh-100" id="home-section">
+                <div class="profile-container text-center">
                     <img src="img/profile_photo.png" alt="Foto de perfil" class="profile-img img-fluid">
-                    <div>
-                        <h2 class="mb-1 fs-1" id="home-section">Luis Coria</h2>
-                        <p class="mb-0 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minima aspernatur provident asperiores temporibus autem accusamus explicabo voluptatum eveniet at inventore non ipsam quae, ducimus sint, distinctio obcaecati. Iusto, voluptates?</p>
+                    <div class="content-home">
+                        <h1 class="mb-3 fs-1">Luis Coria</h1>
+                        <p class="mb-3 fs-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minima aspernatur provident asperiores temporibus autem accusamus explicabo voluptatum eveniet at inventore non ipsam quae, ducimus sint, distinctio obcaecati. Iusto, voluptates?
+                        </p>
                     </div>
                 </div>
             </section>
 
-            <!-- SECCIONES SOBRE MI -->
-            <div class="title-form-div mt-5">
-                <h2 class="mt-5 p-1 title-form" id="about-me-section">Sobre mi</h2>
-            </div>
-
-            <section class="container">
-                <!-- APARTADO HABILIDADES -->
-                <div class="mt-5">
-                    <h2 class="ps-1 text-center">Habilidades</h2>
-                    <div class="mt-5 row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Conocimiento #1</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro voluptate architecto aliquid in quis, veniam ad ratione pariatur repellat quasi at velit eligendi enim doloremque! Rem ipsum obcaecati eveniet magnam.
-                                    </p>
+            <!-- SECCION SOBRE MI -->
+            <section id="about-me-section">
+                <div class="title-form-div">
+                    <h2 class="mt-5 p-1 title-form">Sobre mi</h2>
+                </div>
+    
+                <div class="container">
+                    <!-- APARTADO HABILIDADES -->
+                    <div class="mt-5">
+                        <h2 class="ps-1 text-center">Habilidades</h2>
+                        <div class="mt-5 row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Conocimiento #1</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro voluptate architecto aliquid in quis, veniam ad ratione pariatur repellat quasi at velit eligendi enim doloremque! Rem ipsum obcaecati eveniet magnam.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Conocimiento #2</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum culpa rem consequatur tenetur ducimus et possimus repellendus itaque aut, minus est cupiditate, fuga veritatis eos voluptatibus nostrum quibusdam? Quis.
-                                    </p>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Conocimiento #2</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum culpa rem consequatur tenetur ducimus et possimus repellendus itaque aut, minus est cupiditate, fuga veritatis eos voluptatibus nostrum quibusdam? Quis.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Conocimiento #3</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quos accusantium ipsa illum ad asperiores! Molestias vitae autem illo commodi, similique voluptate quod, nostrum assumenda natus doloremque sit molestiae nemo!
-                                    </p>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Conocimiento #3</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quos accusantium ipsa illum ad asperiores! Molestias vitae autem illo commodi, similique voluptate quod, nostrum assumenda natus doloremque sit molestiae nemo!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- APARTADO EDUCACION -->
-                <div class="mt-5">
-                    <h2 class="ps-1 text-center">Educacion</h2>
-                    <div class="mt-5 row">
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Formacion #1</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro voluptate architecto aliquid in quis, veniam ad ratione pariatur repellat quasi at velit eligendi enim doloremque! Rem ipsum obcaecati eveniet magnam.
-                                    </p>
+    
+                    <!-- APARTADO EDUCACION -->
+                    <div class="mt-5">
+                        <h2 class="ps-1 text-center">Educacion</h2>
+                        <div class="mt-5 row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Formacion #1</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro voluptate architecto aliquid in quis, veniam ad ratione pariatur repellat quasi at velit eligendi enim doloremque! Rem ipsum obcaecati eveniet magnam.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Formacion #2</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum culpa rem consequatur tenetur ducimus et possimus repellendus itaque aut, minus est cupiditate, fuga veritatis eos voluptatibus nostrum quibusdam? Quis.
-                                    </p>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Formacion #2</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum culpa rem consequatur tenetur ducimus et possimus repellendus itaque aut, minus est cupiditate, fuga veritatis eos voluptatibus nostrum quibusdam? Quis.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- APARTADO EXPERIENCIA -->
-                <div class="mt-5">
-                    <h2 class="ps-1 text-center">Experiencia</h2>
-                    <div class="mt-5 row">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Campo laboral #1</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro voluptate architecto aliquid in quis, veniam ad ratione pariatur repellat quasi at velit eligendi enim doloremque! Rem ipsum obcaecati eveniet magnam.
-                                    </p>
+    
+                    <!-- APARTADO EXPERIENCIA -->
+                    <div class="mt-5">
+                        <h2 class="ps-1 text-center">Experiencia</h2>
+                        <div class="mt-5 row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Campo laboral #1</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro voluptate architecto aliquid in quis, veniam ad ratione pariatur repellat quasi at velit eligendi enim doloremque! Rem ipsum obcaecati eveniet magnam.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Campo laboral #2</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum culpa rem consequatur tenetur ducimus et possimus repellendus itaque aut, minus est cupiditate, fuga veritatis eos voluptatibus nostrum quibusdam? Quis.
-                                    </p>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Campo laboral #2</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum culpa rem consequatur tenetur ducimus et possimus repellendus itaque aut, minus est cupiditate, fuga veritatis eos voluptatibus nostrum quibusdam? Quis.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Campo laboral #2</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum culpa rem consequatur tenetur ducimus et possimus repellendus itaque aut, minus est cupiditate, fuga veritatis eos voluptatibus nostrum quibusdam? Quis.
-                                    </p>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Campo laboral #2</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum culpa rem consequatur tenetur ducimus et possimus repellendus itaque aut, minus est cupiditate, fuga veritatis eos voluptatibus nostrum quibusdam? Quis.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Campo laboral #2</h5>
-                                    <p class="card-text">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum culpa rem consequatur tenetur ducimus et possimus repellendus itaque aut, minus est cupiditate, fuga veritatis eos voluptatibus nostrum quibusdam? Quis.
-                                    </p>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Campo laboral #2</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dolorum culpa rem consequatur tenetur ducimus et possimus repellendus itaque aut, minus est cupiditate, fuga veritatis eos voluptatibus nostrum quibusdam? Quis.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             
             <!-- SECCION PORFOLIO -->
-            <div class="title-form-div mt-5">
-                <h2 class="mt-5 p-1 title-form" id="portfolio-section">Porfolio</h2>
-            </div>
-        
-            <section id="porfolio" class="mt-5">
-                <div class="container">
-                    <div class="row gy-4">
-                        <!-- PROYECTO 1 -->
-                        <div class="col-md-4">
-                            <div class="card portfolio-item">
-                                <img src="img/projects/game.png" class="card-img-top" alt="Proyecto 1">
-                                <div class="card-body">
-                                    <h5 class="card-title">Proyecto 1</h5>
-                                    <p class="card-text">Descripción breve del proyecto 1. Explicación de lo que se hizo.</p>
-                                    <a href="#a" class="btn btn-primary">Ver Proyecto</a>
+            <section id="portfolio-section">
+                <div class="title-form-div mt-5">
+                    <h2 class="mt-5 p-1 title-form">Porfolio</h2>
+                </div>
+            
+                <div id="porfolio" class="mt-5">
+                    <div class="container">
+                        <div class="row gy-4">
+                            <!-- PROYECTO 1 -->
+                            <div class="col-md-4">
+                                <div class="card portfolio-item">
+                                    <img src="img/projects/game.png" class="card-img-top" alt="Proyecto 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 1</h5>
+                                        <p class="card-text">Descripción breve del proyecto 1. Explicación de lo que se hizo.</p>
+                                        <a href="#a" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- PROYECTO 2 -->
-                        <div class="col-md-4">
-                            <div class="card portfolio-item">
-                                <img src="img/projects/game.png" class="card-img-top" alt="Proyecto 2">
-                                <div class="card-body">
-                                    <h5 class="card-title">Proyecto 2</h5>
-                                    <p class="card-text">Descripción breve del proyecto 2. Explicación de lo que se hizo.</p>
-                                    <a href="#a" class="btn btn-primary">Ver Proyecto</a>
+    
+                            <!-- PROYECTO 2 -->
+                            <div class="col-md-4">
+                                <div class="card portfolio-item">
+                                    <img src="img/projects/game.png" class="card-img-top" alt="Proyecto 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 2</h5>
+                                        <p class="card-text">Descripción breve del proyecto 2. Explicación de lo que se hizo.</p>
+                                        <a href="#a" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- PROYECTO 3 -->
-                        <div class="col-md-4">
-                            <div class="card portfolio-item">
-                                <img src="img/projects/game.png" class="card-img-top" alt="Proyecto 3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Proyecto 3</h5>
-                                    <p class="card-text">Descripción breve del proyecto 3. Explicación de lo que se hizo.</p>
-                                    <a href="#a" class="btn btn-primary">Ver Proyecto</a>
+    
+                            <!-- PROYECTO 3 -->
+                            <div class="col-md-4">
+                                <div class="card portfolio-item">
+                                    <img src="img/projects/game.png" class="card-img-top" alt="Proyecto 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Proyecto 3</h5>
+                                        <p class="card-text">Descripción breve del proyecto 3. Explicación de lo que se hizo.</p>
+                                        <a href="#a" class="btn btn-primary">Ver Proyecto</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -235,90 +241,92 @@
             </section>
 
             <!-- SECCION SERVICIO -->
-            <div class="title-form-div mt-5">
-                <h2 class="mt-5 p-1 title-form" id="service-section">Servicio</h2>
-            </div>
-
-            <!-- Sección de Servicios -->
-            <section id="servicios" class="py-5 bg-light">
-                <div class="container">
-                    <div class="row gy-4">
-                        <!-- CONSULTORIA ESTRATEGICA -->
-                        <div class="col-md-4">
-                            <div class="card service-item h-100">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-lightbulb service-icon mb-3"></i>
-                                    <h5 class="card-title">Consultoría Estratégica</h5>
-                                    <p class="card-text">
-                                        Diseñamos planes estratégicos personalizados para impulsar el crecimiento y la competitividad de tu empresa.
-                                    </p>
+            <section id="service-section">
+                <div class="title-form-div mt-5">
+                    <h2 class="mt-5 p-1 title-form">Servicio</h2>
+                </div>
+    
+                <!-- Sección de Servicios -->
+                <div id="servicios" class="py-5 bg-light">
+                    <div class="container">
+                        <div class="row gy-4">
+                            <!-- CONSULTORIA ESTRATEGICA -->
+                            <div class="col-md-4">
+                                <div class="card service-item h-100">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-lightbulb service-icon mb-3"></i>
+                                        <h5 class="card-title">Consultoría Estratégica</h5>
+                                        <p class="card-text">
+                                            Diseñamos planes estratégicos personalizados para impulsar el crecimiento y la competitividad de tu empresa.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- APARTADO TRANSFORMACION DIGITAL -->
+                            <div class="col-md-4">
+                                <div class="card service-item h-100">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-laptop service-icon mb-3"></i>
+                                        <h5 class="card-title">Transformación Digital</h5>
+                                        <p class="card-text">
+                                            Implementamos soluciones digitales innovadoras para optimizar procesos y mejorar la eficiencia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- APARTADO GESTION FINANCIERA -->
+                            <div class="col-md-4">
+                                <div class="card service-item h-100">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-bar-chart-line service-icon mb-3"></i>
+                                        <h5 class="card-title">Gestión Financiera</h5>
+                                        <p class="card-text">
+                                            Ofrecemos asesoramiento financiero para maximizar la rentabilidad y gestionar riesgos de manera efectiva.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- APARTADO TRANSFORMACION DIGITAL -->
-                        <div class="col-md-4">
-                            <div class="card service-item h-100">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-laptop service-icon mb-3"></i>
-                                    <h5 class="card-title">Transformación Digital</h5>
-                                    <p class="card-text">
-                                        Implementamos soluciones digitales innovadoras para optimizar procesos y mejorar la eficiencia.
-                                    </p>
+    
+                        <div class="row gy-4 mt-4">
+                            <!-- APARTADO RECURSOS HUMANOS -->
+                            <div class="col-md-4">
+                                <div class="card service-item h-100">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-people service-icon mb-3"></i>
+                                        <h5 class="card-title">Recursos Humanos</h5>
+                                        <p class="card-text">
+                                            Ayudamos a atraer, desarrollar y retener talento para crear equipos de alto rendimiento.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- APARTADO GESTION FINANCIERA -->
-                        <div class="col-md-4">
-                            <div class="card service-item h-100">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-bar-chart-line service-icon mb-3"></i>
-                                    <h5 class="card-title">Gestión Financiera</h5>
-                                    <p class="card-text">
-                                        Ofrecemos asesoramiento financiero para maximizar la rentabilidad y gestionar riesgos de manera efectiva.
-                                    </p>
+    
+                            <!-- APARTADO ANALISIS DE MERCADO -->
+                            <div class="col-md-4">
+                                <div class="card service-item h-100">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-graph-up-arrow service-icon mb-3"></i>
+                                        <h5 class="card-title">Análisis de Mercado</h5>
+                                        <p class="card-text">
+                                            Proporcionamos estudios de mercado para identificar oportunidades y fortalecer tu posición competitiva.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row gy-4 mt-4">
-                        <!-- APARTADO RECURSOS HUMANOS -->
-                        <div class="col-md-4">
-                            <div class="card service-item h-100">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-people service-icon mb-3"></i>
-                                    <h5 class="card-title">Recursos Humanos</h5>
-                                    <p class="card-text">
-                                        Ayudamos a atraer, desarrollar y retener talento para crear equipos de alto rendimiento.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- APARTADO ANALISIS DE MERCADO -->
-                        <div class="col-md-4">
-                            <div class="card service-item h-100">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-graph-up-arrow service-icon mb-3"></i>
-                                    <h5 class="card-title">Análisis de Mercado</h5>
-                                    <p class="card-text">
-                                        Proporcionamos estudios de mercado para identificar oportunidades y fortalecer tu posición competitiva.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- APARTADO COMPLIANCE Y REGULACION -->
-                        <div class="col-md-4">
-                            <div class="card service-item h-100">
-                                <div class="card-body text-center">
-                                    <i class="bi bi-shield-check service-icon mb-3"></i>
-                                    <h5 class="card-title">Compliance y Regulación</h5>
-                                    <p class="card-text">
-                                        Aseguramos el cumplimiento normativo y minimizamos riesgos legales en tus operaciones.
-                                    </p>
+    
+                            <!-- APARTADO COMPLIANCE Y REGULACION -->
+                            <div class="col-md-4">
+                                <div class="card service-item h-100">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-shield-check service-icon mb-3"></i>
+                                        <h5 class="card-title">Compliance y Regulación</h5>
+                                        <p class="card-text">
+                                            Aseguramos el cumplimiento normativo y minimizamos riesgos legales en tus operaciones.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -326,39 +334,42 @@
                 </div>
             </section>
 
-            <!-- SECCION FORMULARIO -->
-            <div class="title-form-div mt-5 scroll-section">
-                <h2 class="mt-5 p-1 title-form" id="contact-section">Contacto</h2>
-            </div>
-            <!-- ENVIAR POR GMAIL -->
-            <section class="container mt-5">
-                <!-- NAVEGACION DE PESTAÑAS -->
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="email-tab" data-bs-toggle="tab" data-bs-target="#email" type="button" role="tab" aria-controls="email" aria-selected="true">
-                            <p class="button-contac">Enviar Correo</p>
-                        </button>
-                    </li>
-                </ul>
-                <!-- CONTENIDO DE LAS PESTAÑAS -->
-                <!-- GMAIL -->
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="email" role="tabpanel" aria-labelledby="email-tab">
-                        <form action="#" method="POST" class="mt-3">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Mensaje</label>
-                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                        </form>
+            <!-- SECCION CONTACTO-->
+            <section id="contact-section">
+                <div class="title-form-div mt-5 scroll-section">
+                    <h2 class="mt-5 p-1 title-form">Contacto</h2>
+                </div>
+    
+                <!-- ENVIAR POR GMAIL -->
+                <div class="container mt-5">
+                    <!-- NAVEGACION DE PESTAÑAS -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="email-tab" data-bs-toggle="tab" data-bs-target="#email" type="button" role="tab" aria-controls="email" aria-selected="true">
+                                <p class="button-contac">Enviar Correo</p>
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- CONTENIDO DE LAS PESTAÑAS -->
+                    <!-- GMAIL -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="email" role="tabpanel" aria-labelledby="email-tab">
+                            <form action="#" method="POST" class="mt-3">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -380,7 +391,7 @@
                     <div class="col-md-4 mb-3">
                         <h5>Enlaces Rápidos</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#home-section" class="text-white text-decoration-none">Inicio</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
                             <li><a href="#about-me-section" class="text-white text-decoration-none">Sobre mi</a></li>
                             <li><a href="#portfolio-section" class="text-white text-decoration-none">Porfolio</a></li>
                             <li><a href="#service-section" class="text-white text-decoration-none">Servicio</a></li>
