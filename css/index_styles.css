@@ -104,6 +104,106 @@
     }
 }
 
+/* SECCION SOBRE MI */
+
+.pad {
+    padding-bottom: 3rem;
+}
+
+#about-me-section {
+    background-image: url("../img/funds/about-me-fund.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title-about-me {
+    color: #ffffff !important;
+}
+
+/* contenedores experiencia */
+
+.card-experience {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border: 2px solid #ffffff !important;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.5s ease, border 0.3s ease;
+}
+
+.card-experience:hover {
+    background-color: #242424 !important;
+    border: 2px solid #a7ff99 !important;
+    transform: scale(1.05);
+}
+
+/* contenedores educacion */
+
+.card-education {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border: 2px solid #ffffff !important;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.5s ease, border 0.3s ease;
+}
+
+.card-education:hover {
+    background-color: #242424 !important;
+    border: 2px solid #fff599 !important;
+    transform: scale(1.05);
+}
+
+/* contenedores habilidades */
+
+.card-skills {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border: 2px solid #ffffff !important;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.5s ease, border 0.3s ease;
+}
+
+.card-skills:hover {
+    background-color: #242424 !important;
+    border: 2px solid #99ccff !important;
+    transform: scale(1.05);
+}
+
+.item-skills {
+    font-size: 5rem;
+}
+
+/* SECCION PORFOLIO */
+
+#portfolio-section {
+    background-image: url("../img/funds/portfolio-fund.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.card-portfolio {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border: 2px solid #666666!important;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.5s ease, border 0.3s ease;
+}
+
+.card-portfolio:hover {
+    background-color: #242424 !important;
+    border: 2px solid #ffffff !important;
+    transform: scale(1.05);
+}
+
+.card-portfolio img {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #portfolio-section {
+        background-attachment: fixed;
+    }
+}
+
 /* SECCION SERVICIO */
 
 #service-section {
@@ -129,7 +229,7 @@
     background-color: #ffffff !important;
     color: #000000 !important;
     border: 2px solid #000000 !important;
-    transform: scale(1.08);
+    transform: scale(1.06);
 }
 
 /* ALTERNATIVA EN DISPOSITIVOS PEQUEÑOS */
@@ -140,7 +240,19 @@
     }
 }
 
-/* SECCION FORMULARIO */
+/* SECCION CONTACTO */
+
+#contact-section {
+    background-image: url("../img/funds/contact-fund.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#contact-section .text-center {
+    color: #ffffff;
+}
 
 .title-form-div {
     display: flex;
@@ -160,6 +272,35 @@
 
 .button-contac {
     color: #000000 !important;
+}
+
+#myTabContent .tab-pane .form-bg {
+    background-color: #1f1f1f;
+    border: 2px solid #444444 !important;
+    border-radius: 10px !important;
+}
+
+.form-control {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: 2px solid #333333;
+}
+
+.form-control:focus {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-color: #555555;
+    box-shadow: none;
+}
+
+.btn-outline-light {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* BOTON WHATSAPP */
