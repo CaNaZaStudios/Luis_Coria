@@ -21,7 +21,7 @@ document.addEventListener('click', function (event) {
 
 // FUNCION PARA USAR WHATSAPP
 function sendWhatsAppMessage() {
-    const phoneNumber = "#";
+    const phoneNumber = "5491130753354";
     const message = "Hola, estoy interesado en tus servicios. ¿Podríamos hablar?";
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;

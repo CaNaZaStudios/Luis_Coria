@@ -6,11 +6,11 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
 
-/* APARTADO NAVBAR */
+/* ========== NAVBAR STYLES ========== */
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.9);
-    border-bottom: 5px solid #444444 !important;
+    border-bottom: 1px solid #444444 !important;
 }
 
 .nav-link {
@@ -34,7 +34,7 @@
     font-size: 18px;
 }
 
-/* SECCION "HOME" */
+/* ========== SECCION INICIO ========== */
 
 #home-section {
     background-image: url("../img/funds/home-fund.png");
@@ -48,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 900px;
+    max-width: 1300px;
     margin: auto;
     flex-direction: row;
     height: 100%;
@@ -87,7 +87,7 @@
     }
 
     .profile-img {
-        margin-right: 0;
+        margin-right: 0px;
         margin-bottom: 10px;
         width: 200px;
         height: 200px;
@@ -104,7 +104,16 @@
     }
 }
 
-/* SECCION SOBRE MI */
+@media (max-height: 700px) {
+    .profile-img {
+        margin-top: 50px;
+        margin-bottom: 5px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* ========== SECCION SOBRE MI ========== */
 
 .pad {
     padding-bottom: 3rem;
@@ -122,7 +131,7 @@
     color: #ffffff !important;
 }
 
-/* contenedores experiencia */
+/* CONTENEDORES EXPERENCIA */
 
 .card-experience {
     color: #ffffff !important;
@@ -137,7 +146,7 @@
     transform: scale(1.05);
 }
 
-/* contenedores educacion */
+/* CONTENEDORES EDUCACION */
 
 .card-education {
     color: #ffffff !important;
@@ -152,7 +161,7 @@
     transform: scale(1.05);
 }
 
-/* contenedores habilidades */
+/* CONTENEDORES HABILIDADES */
 
 .card-skills {
     color: #ffffff !important;
@@ -171,7 +180,7 @@
     font-size: 5rem;
 }
 
-/* SECCION PORFOLIO */
+/* ========== SECCION PORFOLIO ========== */
 
 #portfolio-section {
     background-image: url("../img/funds/portfolio-fund.png");
@@ -204,7 +213,7 @@
     }
 }
 
-/* SECCION SERVICIO */
+/* ========== SECCION SERVICIO ========== */
 
 #service-section {
     background-image: url("../img/funds/service-fund.png");
@@ -240,7 +249,7 @@
     }
 }
 
-/* SECCION CONTACTO */
+/* ========== SECCION CONTACTO ========== */
 
 #contact-section {
     background-image: url("../img/funds/contact-fund.png");
@@ -258,9 +267,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1f1f1f;
-    border-top: 5px solid #444444;
-    border-bottom: 5px solid #444444;
+    background-color: #000000;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #444444;
     height: 80px;
     width: 100%;
 }
@@ -299,11 +308,22 @@
 }
 
 .btn-outline-light:hover {
-    background-color: #ffffff;
+    background-color: #000000;
     color: #000000;
 }
 
-/* BOTON WHATSAPP */
+.form-bg {
+    background-color: #000000 !important;
+}
+
+/* ========== FOOTER STYLES ========== */
+
+.footer-bg {
+    background-color: #000000;
+    border-top: 1px solid #444444;
+}
+
+/* ========== WHATSAPP STYLES ========== */
 
 #WSP {
     position: fixed;

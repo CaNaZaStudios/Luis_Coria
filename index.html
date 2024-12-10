@@ -63,8 +63,8 @@
                 <div class="profile-container text-center">
                     <img src="img/profile_photo.png" alt="Foto de perfil" class="profile-img img-fluid">
                     <div class="content-home">
-                        <h1 class="mb-3 fs-1">Luis Coria</h1>
-                        <p class="mb-3 fs-5">
+                        <h1 class="fs-1">Luis Coria</h1>
+                        <p class="fs-4">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti minima aspernatur provident asperiores temporibus autem accusamus explicabo voluptatum eveniet at inventore non ipsam quae, ducimus sint, distinctio obcaecati. Iusto, voluptates?
                         </p>
                     </div>
@@ -81,9 +81,9 @@
                     <!-- APARTADO EXPERIENCIA -->
                     <div class="mt-5">
                         <h2 class="ps-1 text-center title-about-me">Experiencia</h2>
-                        <div class="mt-5 row">
+                        <div class="row">
                             <div class="col-md-6">
-                                <div class="card card-experience">
+                                <div class="card card-experience mt-5">
                                     <div class="card-body text-center">
                                         <h4 class="card-title">Campo laboral #1</h4>
                                         <h5>empresa</h5>
@@ -94,7 +94,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="card card-experience">
+                                <div class="card card-experience mt-5">
                                     <div class="card-body text-center">
                                         <h4 class="card-title">Campo laboral #2</h4>
                                         <h5>empresa</h5>
@@ -131,9 +131,9 @@
                     <!-- APARTADO EDUCACION -->
                     <div class="mt-5">
                         <h2 class="ps-1 text-center title-about-me">Educacion</h2>
-                        <div class="mt-5 row">
+                        <div class="row">
                             <div class="col-md-6">
-                                <div class="card card-education">
+                                <div class="card card-education mt-5">
                                     <div class="card-body text-center">
                                         <h4 class="card-title">Formacion #1</h4>
                                         <h5>Instituto</h5>
@@ -144,7 +144,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="card card-education">
+                                <div class="card card-education mt-5">
                                     <div class="card-body text-center">
                                         <h4 class="card-title">Formacion #2</h4>
                                         <h5>Instituto</h5>
@@ -159,9 +159,9 @@
                     <!-- APARTADO HABILIDADES -->
                     <div class="mt-5">
                         <h2 class="ps-1 text-center title-about-me">Habilidades</h2>
-                        <div class="mt-5 row">
+                        <div class="row">
                             <div class="col-md-4">
-                                <div class="card card-skills">
+                                <div class="card card-skills mt-5">
                                     <div class="card-body text-center">
                                         <i class="bi bi-question-circle service-icon mb-3 item-skills"></i>
                                         <h4 class="card-title">Conocimiento #1</h4>
@@ -172,7 +172,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card card-skills">
+                                <div class="card card-skills mt-5">
                                     <div class="card-body text-center">
                                         <i class="bi bi-question-circle service-icon mb-3 item-skills"></i>
                                         <h4 class="card-title">Conocimiento #2</h4>
@@ -183,7 +183,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="card card-skills">
+                                <div class="card card-skills mt-5">
                                     <div class="card-body text-center">
                                         <i class="bi bi-question-circle service-icon mb-3 item-skills"></i>
                                         <h4 class="card-title">Conocimiento #3</h4>
@@ -230,7 +230,7 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <!-- PROYECTO 3 -->
                             <div class="col-md-4">
                                 <div class="card card-portfolio">
@@ -342,7 +342,7 @@
 
             <!-- SECCION CONTACTO-->
             <section class="pad" id="contact-section">
-                <div class="title-form-div scroll-section">
+                <div class="title-form-div">
                     <h2 class="mt-5 p-1 title-form">Contacto</h2>
                 </div>
     
@@ -350,7 +350,6 @@
                 <div class="container">
                     <!-- TEXTO Y IMAGEN ARRIBA DEL FORMULARIO -->
                     <div class="text-center mb-4 mt-5">
-                        <!-- <img src="" alt="Imagen de contacto" class="img-fluid mb-3" style="max-width: 200px;"> -->
                         <h2 class="text-light">¡Contáctame para que trabajemos juntos!</h2>
                         <p style="color: #ffffff;">
                             Siempre estoy dispuesto a ayudar y colaborar en proyectos innovadores. Si tienes alguna duda, propuesta o simplemente quieres saludar, ¡no dudes en escribirme!
@@ -360,7 +359,7 @@
                     <!-- FORMULARIO -->
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="email" role="tabpanel" aria-labelledby="email-tab">
-                            <form action="#" method="POST" class="mt-3 p-4 text-light rounded form-bg">
+                            <form action="php/mail.php" method="POST" class="mt-3 p-4 text-light rounded form-bg">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Nombre</label>
                                     <input type="text" class="form-control bg-dark text-light border-2" id="name" name="name" required>
@@ -382,7 +381,7 @@
         </main>
 
         <!-- FOOTER -->
-        <footer class="bg-dark text-white pt-4">
+        <footer class="footer-bg text-white pt-4">
             <div class="container">
                 <div class="row">
                     <!-- INFORAMCION -->
@@ -408,9 +407,9 @@
                     <!-- REDES SOCIALES -->
                     <div class="col-md-4 mb-3">
                         <h5>Redes Sociales</h5>
-                        <a href="#" class="text-white text-decoration-none me-3"><i class="bi bi-facebook"></i> Facebook</a>
-                        <a href="#" class="text-white text-decoration-none me-3"><i class="bi bi-twitter"></i> Twitter</a>
-                        <a href="#" class="text-white text-decoration-none"><i class="bi bi-instagram"></i> Instagram</a>
+                        <a href="#a" class="text-white text-decoration-none me-3"><i class="bi bi-facebook"></i> Facebook</a>
+                        <a href="#a" class="text-white text-decoration-none me-3"><i class="bi bi-twitter"></i> Twitter</a>
+                        <a href="#a" class="text-white text-decoration-none"><i class="bi bi-instagram"></i> Instagram</a>
                     </div>
                 </div>
         
