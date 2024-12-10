@@ -6,11 +6,36 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
 
+.container-sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-top: 2px solid #444444;
+    border-bottom: 2px solid #444444;
+    height: 80px;
+    width: 100%;
+}
+
+.title-sections {
+    color: #ffffff;
+    font-weight: bold;
+    margin: 50px;
+}
+
+.text-shadow-dark {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+}
+
+.text-shadow-white {
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.45);
+}
+
 /* ========== NAVBAR STYLES ========== */
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.9);
-    border-bottom: 1px solid #444444 !important;
+    border-bottom: 2px solid #444444 !important;
 }
 
 .nav-link {
@@ -93,8 +118,10 @@
         height: 200px;
     }
 
-    .content-home h1, .content-home p {
+    .content-home h1,
+    .content-home p {
         text-align: center;
+        margin-left: 0px;
     }
 
     #home-section {
@@ -104,12 +131,22 @@
     }
 }
 
+@media (max-width: 400px) {
+    .content-home h1 {
+        font-size: 29px !important;
+    }
+
+    .content-home p {
+        font-size: 20px !important;
+    }
+}
+
 @media (max-height: 700px) {
     .profile-img {
         margin-top: 50px;
         margin-bottom: 5px;
-        width: 150px;
-        height: 150px;
+        width: 175px;
+        height: 175px;
     }
 }
 
@@ -263,22 +300,6 @@
     color: #ffffff;
 }
 
-.title-form-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    border-top: 1px solid #444444;
-    border-bottom: 1px solid #444444;
-    height: 80px;
-    width: 100%;
-}
-
-.title-form {
-    color: #ffffff;
-    margin: 50px;
-}
-
 .button-contac {
     color: #000000 !important;
 }
@@ -320,7 +341,7 @@
 
 .footer-bg {
     background-color: #000000;
-    border-top: 1px solid #444444;
+    border-top: 2px solid #444444;
 }
 
 /* ========== WHATSAPP STYLES ========== */
