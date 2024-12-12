@@ -62,7 +62,7 @@
 /* ========== SECCION INICIO ========== */
 
 #home-section {
-    background-image: url("../img/funds/home-fund.png");
+    background-image: url("../img/funds/home-fund.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@
 }
 
 #about-me-section {
-    background-image: url("../img/funds/about-me-fund.png");
+    background-image: url("../img/funds/about-me-fund.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -220,7 +220,7 @@
 /* ========== SECCION PORFOLIO ========== */
 
 #portfolio-section {
-    background-image: url("../img/funds/portfolio-fund.png");
+    background-image: url("../img/funds/portfolio-fund.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -253,7 +253,7 @@
 /* ========== SECCION SERVICIO ========== */
 
 #service-section {
-    background-image: url("../img/funds/service-fund.png");
+    background-image: url("../img/funds/service-fund.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -289,7 +289,7 @@
 /* ========== SECCION CONTACTO ========== */
 
 #contact-section {
-    background-image: url("../img/funds/contact-fund.png");
+    background-image: url("../img/funds/contact-fund.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
